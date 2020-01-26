@@ -9,6 +9,10 @@ import java.util.Timer;
 public class Pong extends Canvas
 {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	static Point delta;
 	static Ellipse2D.Double ball;
 	static int speed = 3;
@@ -100,7 +104,7 @@ public class Pong extends Canvas
 	   
 		Graphics offgc;
 	    Image offscreen = null;
-	    Dimension size = size();
+	    Dimension size = getSize();
 		Dimension d = size;
 
 	    // create the offscreen buffer and associated Graphics
